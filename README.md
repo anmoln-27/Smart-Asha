@@ -98,11 +98,7 @@ Smart-ASHA/
 
 ---
 
-## Prototype Images
-
-### Smart-ASHA Display Interface
-
-![Smart-ASHA Device](images/smart_asha.jpeg)
+## Prototype Image
 
 ### Smart-ASHA Hardware Prototype
 
