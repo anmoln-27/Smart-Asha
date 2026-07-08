@@ -29,12 +29,18 @@ Smart-ASHA is an offline Edge AI healthcare triage system that assists ASHA work
 ## Repository Structure
 
 ```text
-backend/
-frontend/
-datasets/
-models/
-images/
-docs/
+Smart-Asha/
+│
+├── README.md
+├── hardware/      # Sensor schematics, circuit diagrams, BOM
+├── firmware/      # ESP32/Raspberry Pi code
+├── models/        # Trained AI models
+├── datasets/      # Training and testing datasets
+├── notebooks/     # Model training and experimentation
+├── docs/          # Reports, presentations, documentation
+├── images/        # Architecture diagrams and project images
+├── requirements.txt
+└── LICENSE
 ```
 
 ## Future Scope
