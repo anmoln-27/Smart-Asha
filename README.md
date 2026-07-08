@@ -1,51 +1,162 @@
 # Smart-ASHA
 
+## Portable Edge-AI Healthcare Triage System for Rural Health Workers
+
+Smart-ASHA is a portable Edge-AI healthcare triage system designed to assist rural health workers in low-resource environments. Using multimodal sensors and on-device intelligence, it enables real-time, non-invasive assessment of vital signs and health indicators without requiring internet connectivity.
+
+---
+
 ## Problem Statement
 
-Rural healthcare workers often face challenges in diagnosing patients due to lack of infrastructure and internet connectivity.
+Millions of people in rural and remote areas lack access to immediate healthcare diagnostics due to limited medical infrastructure, shortage of healthcare professionals, and poor internet connectivity.
+
+ASHA workers often rely on manual observations and delayed referrals, which can slow down treatment for high-risk patients.
+
+---
 
 ## Solution
 
-Smart-ASHA is an offline Edge AI healthcare triage system that assists ASHA workers using multimodal sensors and on-device machine learning.
+Smart-ASHA leverages Edge AI and multimodal sensing to provide rapid health screening and triage support directly on-device.
 
-## Features
+The system operates fully offline and analyzes multiple physiological parameters simultaneously to identify potential health risks and assist ASHA workers in making faster and more informed decisions.
 
-- Offline diagnosis support
-- Fever detection
-- Respiratory monitoring
-- Stress analysis
-- Metabolic abnormality detection
-- Risk prioritization
+---
 
-## Tech Stack
+## Key Features
+
+- Offline AI-powered healthcare assessment
+- Fever detection using thermal sensing
+- Blood oxygen (SpO₂) monitoring
+- Respiratory condition assessment
+- Stress level estimation
+- Metabolic abnormality screening
+- Real-time triage recommendations
+- Portable and low-power design
+- Designed specifically for rural healthcare environments
+
+---
+
+## Hardware Components
+
+- ESP32-S3 Edge AI Controller
+- MLX90640 Thermal Sensor
+- MAX30102 Pulse Oximeter Sensor
+- MPU6050 Motion Sensor
+- GSR Sensor for Stress Detection
+- MQ135 Gas Sensor for Breath Analysis
+- OLED Display Module
+- LED Triage Indicators
+- Rechargeable Battery System
+
+---
+
+## Software Stack
 
 - Python
-- Machine Learning
-- Edge AI
-- IoT Sensors
-- Raspberry Pi
-- OpenCV
+- TensorFlow Lite
+- Edge AI Inference
+- Embedded C/C++
+- Sensor Fusion Algorithms
+- Real-time Signal Processing
+
+---
+
+## System Architecture
+
+```text
+Health Sensors
+    ↓
+ESP32-S3 Edge Controller
+    ↓
+Signal Processing & Sensor Fusion
+    ↓
+TensorFlow Lite Inference Engine
+    ↓
+Risk Classification Engine
+    ↓
+OLED Display + LED Indicators
+    ↓
+ASHA Worker Decision Support
+```
+
+---
 
 ## Repository Structure
 
 ```text
-Smart-Asha/
+Smart-ASHA/
 │
-├── README.md
-├── hardware/      # Sensor schematics, circuit diagrams, BOM
-├── firmware/      # ESP32/Raspberry Pi code
-├── models/        # Trained AI models
 ├── datasets/      # Training and testing datasets
-├── notebooks/     # Model training and experimentation
-├── docs/          # Reports, presentations, documentation
-├── images/        # Architecture diagrams and project images
-├── requirements.txt
-└── LICENSE
+├── docs/          # Architecture and technical documentation
+├── firmware/      # Embedded firmware and sensor code
+├── hardware/      # Sensor details and assembly guides
+├── images/        # Prototype and architecture images
+├── models/        # AI model information and metrics
+├── notebooks/     # Experiments and model development
+└── README.md
 ```
+
+---
+
+## Prototype Images
+
+### Smart-ASHA Display Interface
+
+![Smart-ASHA Device](images/smart_asha.jpeg)
+
+### Smart-ASHA Hardware Prototype
+
+![Hardware Prototype](images/smart_box_box.jpeg)
+
+---
+
+## Performance Metrics
+
+| Metric | Value |
+|--------|-------|
+| Fever Detection Accuracy | 98.01% |
+| Average Inference Time | 142 ms |
+| Memory Usage | 232 KB |
+| Connectivity Requirement | Offline |
+| Deployment Target | Edge Device |
+
+---
+
+## Applications
+
+- Rural Healthcare Centers
+- Community Health Screening Camps
+- Emergency Triage Support
+- Remote Villages
+- Mobile Healthcare Units
+- Disaster Relief Operations
+
+---
 
 ## Future Scope
 
-- Regional language support
-- Government healthcare integration
+- Multilingual voice assistance
+- Telemedicine integration
 - Cloud synchronization
-- Predictive analytics
+- Predictive healthcare analytics
+- Electronic health record integration
+- Expansion to additional biomarkers
+
+---
+
+## Contributors
+
+- Gauri Gupta
+- Anmol Nandwani
+
+---
+
+## License
+
+This project is developed for academic and research purposes.
+
+---
+
+## Vision
+
+*"Affordable, intelligent, and accessible healthcare for every rural community."*
